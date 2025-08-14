@@ -1,66 +1,39 @@
-# Electron + React + Tailwind Boilerplate
-A modern boilerplate to build cross-platform, high-performance desktop applications using Electron, React, Tailwind CSS, and other cutting-edge web development tools.
+# POS System (Electron.js + React.js)
 
-## Features
+A modern **Point of Sale (POS) System** built using **Electron.js** for a cross-platform desktop experience and **React.js** for a fast, interactive user interface.  
+This system is designed to handle product management, billing, and payment processing, making it ideal for small to medium businesses.
 
-- **ElectronJS**: Cross-platform desktop app development with web technologies.
-- **ReactJS**: Efficient library for building dynamic user interfaces.
-- **TailwindCSS**: Utility-first CSS framework for fast UI development.
-- **ShadcnUI**: Reusable and customizable components to speed up development.
-- **Vite**: Lightning-fast development server with hot module replacement (HMR).
-- **Vitest**: Fast and simple unit testing for React components.
-- **React Testing Library**: Helps test React components in a user-centric way.
-- **Happy DOM**: A fast DOM simulation for testing React components.
-- **BiomeJS**: A fast and reliable linter and code formatter for consistent code style.
+---
 
-## Getting Started
+## 🚀 Features
 
-1. Clone or Fork the Repository
+- **Cross-Platform Desktop App** – Runs on Windows, macOS, and Linux.
+- **Fast & Responsive UI** – Powered by React.js and TailwindCSS.
+- **Product Management** – Add, update, and delete products with ease.
+- **Cart System** – Add multiple products and adjust quantities in real-time.
+- **Billing & Checkout** – Calculates totals, taxes, and discounts automatically.
+- **Persistent Data Storage** – Saves product and transaction data locally.
+- **Search & Filter** – Quickly find products during checkout.
+- **Receipt Printing** – Generate receipts for customers.
+- **Dark Mode UI** – Sleek and easy on the eyes.
+- **Offline Support** – Works without internet.
 
-You can either use this template by clicking the "Use this template" button or clone the repository to your local machine:
-```bash
-git clone https://github.com/Molizanee/electron-react-tailwind.git && cd electron-react-tailwind
-```
+---
 
-2. Install Dependencies
+## 🛠️ Tech Stack
 
-Once inside the project directory, install all required dependencies:
-```bash
-npm install
-```
+- **Frontend**: React.js, TailwindCSS
+- **Backend (Electron Main Process)**: Node.js
+- **Desktop Runtime**: Electron.js
+- **State Management**: Zustand / Redux (depending on your choice)
+- **Database**: SQLite / NeDB / LocalStorage (based on implementation)
+- **Build Tool**: Vite (for React)
+- **Packaging**: Electron Builder
 
-3. Run the Development Server
+---
 
-Start the project in development mode with hot-reloading enabled:
-```bash
-npm run dev
-```
+## 📸 Screenshots
 
-4. Run Tests
+> _(Add screenshots of your UI here for a better GitHub presentation)_
 
-Run all tests with Vitest:
-```bash
-npm run test
-```
-
-To open the Vitest UI for a visual overview of your tests:
-```bash
-npm run test:ui
-```
-
-5. Build the Project
-
-To build the project for production:
-```bash
-npm run build
-```
-
-This will bundle your application and prepare it for distribution across different platforms.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributions
-
-Feel free to contribute! Please submit a pull request or open an issue for any changes or improvements.
+---
