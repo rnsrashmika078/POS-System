@@ -39,76 +39,6 @@ const ShopName = () => {
     );
 };
 
-// const Status = () => {
-//     const list = ["Open", "Closed"];
-//     const [open, setOpen] = useState<boolean>(false);
-
-//     const [isSubMenuOpen, setIsSubMenuOpen] = useState<boolean>(false);
-//     const dropdownRef = useRef<HTMLDivElement>(null);
-
-//     useEffect(() => {
-//         const handleClickOutside = (event: MouseEvent) => {
-//             if (
-//                 dropdownRef.current &&
-//                 !dropdownRef.current.contains(event.target as Node) //Check if the click is not inside the drop down
-//             ) {
-//                 setIsSubMenuOpen(false);
-//             }
-//         };
-//         document.addEventListener("mousedown", handleClickOutside);
-//         return () => {
-//             document.removeEventListener("mousedown", handleClickOutside);
-//         };
-//     }, []);
-
-//     const [current, setCurrent] = useState<"Open" | "Closed">("Open");
-
-//     const selection = (item: string) => {
-//         if (item === "Open") {
-//             setCurrent("Open");
-//         } else {
-//             setCurrent("Closed");
-//         }
-
-//         setIsSubMenuOpen(false);
-//     };
-//     return (
-//         <div className="flex gap-2 justify-start items-center p-1 rounded-xl bg-white  hover:bg-blue-950 hover:text-white  shadow-sm mt-2 ml-2 border border-[var(--border-color)] w-24  ">
-//             <div className="relative flex gap-1 justify-center items-center">
-//                 {/* <DropDown
-//                     itemArray={["Open", "Closed"]}
-//                     current={current}
-//                     setIsSubMenuOpen={setIsSubMenuOpen}
-//                     isSubMenuOpen={isSubMenuOpen}
-//                     dropdownRef={dropdownRef}
-//                     handleActionChanges={selection}
-//                 ></DropDown> */}
-//                 <div
-//                     className="relative flex justify-between items-center"
-//                     onClick={() => setOpen((prev) => !prev)}
-//                 >
-//                     <div className="flex justify-center items-center cursor-pointer z-[9999]">
-//                         <p className="">{current}</p>
-//                         <RiArrowDropDownLine size={30} />
-//                     </div>
-//                     {open && (
-//                         <div className="z-30 w-50 list-none mb-2 border border-[var(--border-color)] shadow-sm absolute top-8  right-0 cursor-pointer rounded-sm border border-[var(--border-color)]-gray-300 bg-gray-200 ">
-//                             {["Dine-in", "Take Away"].map((item, i) => (
-//                                 <li
-//                                     key={i}
-//                                     className="hover:bg-blue-950  hover:text-white p-1 cursor-pointer text-sm rounded-sm"
-//                                     onClick={() => setCurrent(item)}
-//                                 >
-//                                     {item}
-//                                 </li>
-//                             ))}
-//                         </div>
-//                     )}
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
 
 const Address = () => {
     return (
@@ -167,9 +97,8 @@ const Today = () => {
     }, [date]);
 
     return (
-        <div className="flex gap-2 justify-start items-center p-1 rounded-xl bg-[var(--card)]  px-5 hover:bg-blue-950 hover:text-white  shadow-sm mt-2  border border-[var(--border-color)] w-80 text-start">
+        <div className="flex gap-2 justify-start items-center p-1 rounded-xl bg-[var(--card)]  px-5 hover:bg-blue-950 hover:text-white  shadow-sm mt-2  border border-[var(--border-color)] w-auto text-start">
             {`
-            ${day[select]},
             ${date}
             ${months[month]} 
             ${year}
