@@ -42,12 +42,10 @@ const Dashboard = () => {
 
   const sideBarDynamics =
     screen !== "mobile" ? "flex h-screen " : "fixed h-screen z-10 top-0 left-0";
-  const OrderListDynamics =
-    screen !== "mobile" ? "fixed " : "fixed h-screen z-15 top-0 right-0";
+  const OrderListDynamics = "fixed top-0 right-0 z-[99999] lg:sticky";
 
   return (
-    <div className="flex min-h-screen justify-between w-full h-full overflow-y-hidden">
-      {/* <div className="fixed top-0 left-0 p-5">Sidebar</div> */}
+    <div className="flex h-screen justify-between w-full overflow-y-hidden">
       <div
         style={{
           width: activeSideBar ? "300px" : "60px",
@@ -59,9 +57,6 @@ const Dashboard = () => {
 
       <div className="flex flex-col justify-between  min-h-screen w-full overflow-y-hidden">
         <div className="flex  flex-col sticky top-0 ml-14 px-2 sm:ml-0 ">
-          {/* <div className="flex w-full h-16 justify-between px-5 py-2">
-            <Topbar />
-          </div> */}
           <Tabs />
           <HR />
         </div>
@@ -98,12 +93,12 @@ const Dashboard = () => {
           <Footer />
         </div>
       </div>
-      <div className=" sticky bottom-0 bg-blue-500 h-[670px]">
+      <div className={`h-[670px] ${OrderListDynamics}`}>
         <div
           style={{
             width: activeOrderBar ? "400px" : "0",
           }}
-          className={`fixed sm:flex w-[500px] z-50 transition-all h-full`}
+          className={`z-50 transition-all h-full`}
         >
           <OrderSummary />
         </div>

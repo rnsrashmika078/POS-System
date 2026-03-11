@@ -28,11 +28,17 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div className="bg-[var(--card)] relative flex flex-col border border-[var(--border-color)] w-fit shadow-md justify-center items-center rounded-xl">
-      <img
-        src={image}
-        className="w-72 h-48 flex-shrink-0 rounded-t-xl"
-        alt="Logo"
-      />
+      <div className="w-full h-full flex relative">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent rounded-t-xl"></div>
+        <img
+          src={image}
+          width={50}
+          height={50}
+          className="w-72 h-48 flex-shrink-0 rounded-t-xl"
+          alt="Logo"
+        />
+      </div>
+
       <div className="absolute flex justify-center items-center top-3 left-3 gap-2 bg-white p-1 rounded-sm shadow-md border border-gray-300">
         {availability ? (
           <>

@@ -1,3 +1,4 @@
+import WebSocket from "@/components/Websocket/web_socket";
 import { useActiveTab } from "@/zustand/store";
 import { MenuIcon, RefreshCcw, Search } from "lucide-react";
 
@@ -103,6 +104,7 @@ const Tabs: React.FC = () => {
                 placeholder="Search Menu"
               />
             </span>
+            <WebSocket />
           </div>
         </div>
       </div>
