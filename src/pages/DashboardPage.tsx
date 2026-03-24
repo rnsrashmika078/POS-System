@@ -8,7 +8,6 @@ import Sidebar from "@/components/Dashboard/Sidebar/Sidebar";
 import Card from "@/components/Dashboard/Card/Card";
 import Footer from "@/components/Dashboard/Footer/Footer";
 import OrderSummary from "@/components/Dashboard/OrderSummary/OrderSummary";
-import Topbar from "@/components/Dashboard/Topbar/Topbar";
 import Tabs from "@/components/Dashboard/Tabs/Tabs";
 import HR from "@/components/Common/HR";
 
@@ -60,7 +59,7 @@ const Dashboard = () => {
           <Tabs />
           <HR />
         </div>
-
+        {/* <Camera /> */}
         <div className="grid ml-14 sm:ml-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 z-50 h-[670px] overflow-y-auto">
           {filteredProducts.map((product, i) => (
             <div className="p-2" key={i}>
