@@ -78,3 +78,8 @@
         display: hidden;
     }
 } */
+.custom-scrollbar {
+  overflow: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #474747 #1e1e1e;
+}

@@ -35,7 +35,7 @@ export default defineConfig({
 	},
 	build: {
 		rollupOptions: {
-			external: ["electron"], // This ensures electron modules are externalized
+			external: ["electron","express","http","socket.io"], // This ensures electron modules are externalized
 		},
 	},
 });

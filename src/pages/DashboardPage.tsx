@@ -60,7 +60,7 @@ const Dashboard = () => {
           <HR />
         </div>
         {/* <Camera /> */}
-        <div className="grid ml-14 sm:ml-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 z-50 h-[670px] overflow-y-auto">
+        <div className="grid ml-14 sm:ml-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 z-50 h-[670px] custom-scrollbar">
           {filteredProducts.map((product, i) => (
             <div className="p-2" key={i}>
               <Card
