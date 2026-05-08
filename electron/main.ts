@@ -2,7 +2,7 @@ import { app, BrowserWindow } from "electron";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { initServer } from "./server";
+// import { initServer } from "./server";
 
 createRequire(import.meta.url);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -72,5 +72,5 @@ app.on("activate", () => {
 
 app.whenReady().then(() => {
   createWindow();
-  initServer();
+  // initServer();
 });
